@@ -1,0 +1,37 @@
+.Center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Right {
+  display: block;
+  margin-right: auto;
+}
+.Left {
+  display: block;
+  margin-left: auto;
+}
+.column {
+  border: solid 2px #ffffff;
+  display: flex;
+}
+.column {
+  border: solid 2px #ffffff;
+  flex: 0.25;
+}
+.columns {
+  border: solid 1px rgb(44, 44, 44);
+  display: flex;
+}
+.columns {
+  border: solid 1px rgb(44, 44, 44);
+  flex: 0.1;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  color: antiquewhite;
+}
+.Backround {
+  background-color: rgb(44, 44, 44)
+  background-image: url("Smooth Backround.jpg");
+}
