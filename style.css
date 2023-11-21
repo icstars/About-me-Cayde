@@ -1,3 +1,4 @@
+
 .Center {
   display: block;
   margin-left: auto;
@@ -12,12 +13,12 @@
   margin-left: auto;
 }
 .column {
-  border: solid 2px #ffffff;
+  border: solid 2px rgb(44,44,44);
   display: flex;
 }
 .column {
-  border: solid 2px #ffffff;
-  flex: 0.25;
+  border: solid 2px rgb(44,44,44);
+  flex: 0.1;
 }
 .columns {
   border: solid 1px rgb(44, 44, 44);
@@ -33,5 +34,48 @@ body {
 }
 .Backround {
   background-color: rgb(44, 44, 44)
-  background-image: url("Smooth Backround.jpg");
+  background-image; url("Smooth Backround.jpg");
+}
+button {
+  background-color:transparent;
+  color: antiquewhite;
+  border: 2px solid antiquewhite;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: bold;
+}
+button:hover {
+  transform: scale(1.2);
+  background-color: transparent;
+  border: 2px solid antiquewhite;
+  color: antiquewhite;
+  transition: .4s;
+  cursor: pointer;
+}
+.wrap {
+  margin: 150px auto;
+  width: auto;
+
+}
+.rfloat {
+  max-width: 320px;
+  float: left;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+.lfloat {
+  max-width: 320px;
+  float: right;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+.space {
+  margin-left: 55px
+}
+.hidden {
+  display: none;
 }
