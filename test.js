@@ -46,10 +46,10 @@ let arr = [1,2,3,4,5]
 //OBJECTS
 
 const vince ={
-    age: 21
-    hobby: 'dadadadadada'
-    email: 'vince@hotmail.com'
-    pw: 123
+    age: 21,
+    hobby: 'dadadadadada',
+    email: 'vince@hotmail.com',
+    pw: 123,
 }
 
 //LOOPS

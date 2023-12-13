@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadin Froemming</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <script type="module" src="./src/app.js"></script>
   </head>
 
   <body style="background-color: rgb(44, 44, 44)">
@@ -12,7 +13,7 @@
     <div class="columns">
       <img
         style="border-style: double"
-        src="Self.jpg"
+        src="./img/Self.jpg"
         alt="Image Not Found"
         width="300"
         height="400"
@@ -20,7 +21,7 @@
       />
       <img
         style="border-style: double"
-        src="w jame.jpeg"
+        src="./img/w jame.jpeg"
         alt="Image Not Found"
         width="225"
         height="400"
@@ -49,6 +50,12 @@
     </div>
     <div><br /></div>
     <div class="column">
+      <button id="RPCB" type="button" class="Center">RPS</button>
+      <button id="BattleS" type="button" class="Center">Battleship</button>
+      <button id="GGame" type="button" class="Center">Guessing Game</button>
+    </div>
+    <div><br /></div>
+    <div class="column">
       <button id="Skilltag" style="margin-left: 55px" type="button">
         Skills
       </button>
@@ -74,7 +81,7 @@
       <h1 style="text-align: center; font-size: 32px">Hobbies</h1>
       <div style="margin-left: 10%" class=".wrap">
         <img
-          src="Airsoft.jpg"
+          src="./img/Airsoft.jpg"
           alt="Image Not Found"
           width="225"
           height="400"
@@ -91,7 +98,7 @@
       <div>
         <div style="margin-right: 10%; margin-top: 350px">
           <img
-            src="YOMI.jpg"
+            src="./img/YOMI.jpg"
             alt="Image Not Found"
             width="225"
             height="400"
@@ -109,7 +116,7 @@
         </div>
         <div style="margin-left: 10%; margin-top: 325px" class=".wrapper">
           <img
-            src="Blacksmithing.jpg"
+            src="./img/Blacksmithing.jpg"
             alt="Image Not Found"
             width="225"
             height="400"
@@ -172,7 +179,7 @@
         <li>Intern at i.c.star Milwaukee</li>
       </ul>
     </div>
-    <button onclick="RPS()">RPS</button>
-    <script src="test2.js"></script>
   </body>
+  <script src="./src/Battleship.js"></script>
+  <script src="./src/GuessingGame.js"></script>
 </html>
