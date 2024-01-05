@@ -43,4 +43,4 @@ let GGames = () => {
 
   guessingGame();
 };
-buttong.addEventListener("click", GGames());
+buttong.addEventListener("click", GGames);

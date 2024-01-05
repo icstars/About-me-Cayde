@@ -1,4 +1,3 @@
-let buttonb = document.querySelector(`#BattleS`);
 let Battle = () => {
   //initialize variables
   alert("This game is played in the console press f12");
@@ -125,5 +124,4 @@ let Battle = () => {
     console.log("Victor");
   }
 };
-
-buttonb.addEventListener("click", Battle);
+export { Battle };

@@ -8,7 +8,15 @@
     <script type="module" src="./src/app.js"></script>
   </head>
 
-  <body style="background-color: rgb(44, 44, 44)">
+  <body
+    style="
+      background: radial-gradient(
+        circle at 18.7% 37.8%,
+        rgb(66, 66, 66) 0%,
+        rgb(46, 90, 109) 90%
+      );
+    "
+  >
     <h1 style="text-align: center">Cadin Froemming</h1>
     <div class="columns">
       <img
@@ -50,32 +58,27 @@
     </div>
     <div><br /></div>
     <div class="column">
-      <button id="RPCB" type="button" class="Center">RPS</button>
-      <button id="BattleS" type="button" class="Center">Battleship</button>
-      <button id="GGame" type="button" class="Center">Guessing Game</button>
-    </div>
-    <div><br /></div>
-    <div class="column">
-      <button id="Skilltag" style="margin-left: 55px" type="button">
-        Skills
-      </button>
-      <button id="Hob" style="margin-left: 55px" type="button">Hobbies</button>
-      <button id="Pasttag" style="margin-left: 55px" type="button">
+      <button id="Skilltag" class="Center" type="button">Skills</button>
+      <button id="Hob" class="Center" type="button">Hobbies</button>
+      <button id="Pasttag" class="Center" type="button">
         Past Work Expeireince
       </button>
-      <button id="Asptag" style="margin-left: 55px" type="button">
-        Aspirations
-      </button>
-      <button id="Edutag" style="margin-left: 55px" type="button">
-        Education
-      </button>
+      <button id="Asptag" class="Center" type="button">Aspirations</button>
+      <button id="Edutag" class="Center" type="button">Education</button>
+      <button id="gtag" class="Center" type="button">Browser Games</button>
       <button
-        style="margin-left: 55px"
+        class="Center"
         type="button"
         onclick="location.href = 'https://www.linkedin.com/in/cadin-froemming/'"
       >
         Linkedin
       </button>
+    </div>
+    <div id="gamu" class="column" class="hidden">
+      <br />
+      <button id="RPCB" type="button" class="Center">RPS</button>
+      <button id="BattleS" type="button" class="Center">Battleship</button>
+      <button id="GGame" type="button" class="Center">Guessing Game</button>
     </div>
     <div id="Hobi" class="hidden">
       <h1 style="text-align: center; font-size: 32px">Hobbies</h1>
@@ -179,7 +182,18 @@
         <li>Intern at i.c.star Milwaukee</li>
       </ul>
     </div>
+    <section>
+      <p>Please Commit LIKE button Murder</p>
+      <form action="" id="mainForm">
+        <label for="firstNameInput">First Name</label>
+        <input type="text" name="" id="firstNameInput" />
+        <label for="lastNameInput">Favorite Game</label>
+        <input type="text" name="" id="lastNameInput" />
+        <label for="dateInput">Birth Date</label>
+        <input type="date" name="" id="dateInput" />
+        <input type="submit" id="submitBtn" value="LIKE" />
+      </form>
+      <p id="para"></p>
+    </section>
   </body>
-  <script src="./src/Battleship.js"></script>
-  <script src="./src/GuessingGame.js"></script>
 </html>

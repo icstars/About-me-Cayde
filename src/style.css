@@ -1,4 +1,3 @@
-
 .Center {
   display: block;
   margin-left: auto;
@@ -13,19 +12,15 @@
   margin-left: auto;
 }
 .column {
-  border: solid 2px rgb(44,44,44);
   display: flex;
 }
 .column {
-  border: solid 2px rgb(44,44,44);
   flex: 0.1;
 }
 .columns {
-  border: solid 1px rgb(44, 44, 44);
   display: flex;
 }
 .columns {
-  border: solid 1px rgb(44, 44, 44);
   flex: 0.1;
 }
 body {
@@ -33,11 +28,11 @@ body {
   color: antiquewhite;
 }
 .Backround {
-  background-color: rgb(44, 44, 44)
-  background-image; url("Smooth Backround.jpg");
+  background-color: rgb(44, 44, 44) background-image;
+  url: ("Smooth Backround.jpg");
 }
 button {
-  background-color:transparent;
+  background-color: transparent;
   color: antiquewhite;
   border: 2px solid antiquewhite;
   text-decoration: none;
@@ -51,13 +46,12 @@ button:hover {
   background-color: transparent;
   border: 2px solid antiquewhite;
   color: antiquewhite;
-  transition: .4s;
+  transition: 0.4s;
   cursor: pointer;
 }
 .wrap {
   margin: 150px auto;
   width: auto;
-
 }
 .rfloat {
   max-width: 320px;
@@ -74,7 +68,7 @@ button:hover {
   margin-right: 15px;
 }
 .space {
-  margin-left: 55px
+  margin-left: 55px;
 }
 .hidden {
   display: none;

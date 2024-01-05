@@ -2,8 +2,16 @@
 import { decision } from "./RPCDC.js";
 import { pChoice } from "./RPC PL.js";
 import { cChoice } from "./RPC CC.js";
+import { Battle } from "./Battleship.js";
 //End of Imports
 // Buttons for Pages
+
+let buttong = document.querySelector(`#GGame`);
+buttong.addEventListener("click", GGames);
+
+let buttonb = document.querySelector(`#BattleS`);
+buttonb.addEventListener("click", Battle);
+
 let button = document.querySelector(`#Hob`);
 let div = document.querySelector(`#Hobi`);
 
@@ -37,6 +45,13 @@ let div4 = document.querySelector(`#Edudiv`);
 
 button4.addEventListener("click", function () {
   div4.classList.toggle("hidden");
+});
+
+let button5 = document.querySelector(`#gtag`);
+let div5 = document.querySelector(`#gamu`);
+
+button5.addEventListener("click", function () {
+  div5.classList.toggle("hidden");
 });
 // End of Tab Buttons
 
@@ -76,3 +91,44 @@ let startGame = () => {
 
 buttonr.addEventListener("click", startGame);
 // End Rock Paper Scissors
+
+//Star BattleShip
+Battle;
+//end Battleship
+
+//HW Stuff
+
+const grabFirstName = document.getElementById("firstNameInput");
+console.log(grabFirstName);
+
+const grablastName = document.getElementById("lastNameInput");
+console.log(grablastName);
+
+const grabdateinput = document.getElementById("dateInput");
+console.log(grabdateinput);
+
+const grabSubmitBtn = document.getElementById("submitBtn");
+console.log(grabSubmitBtn);
+
+grabSubmitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log("HIT IT HARDER");
+  console.log(grabFirstName.value);
+  console.log(grablastName.value);
+  console.log(grabdateinput.value);
+
+  //when we click the like button the paragraph will appear
+  // Thank Should've hit it sooner
+  const paragraphElement = document.querySelector("#para");
+  console.log(
+    `${grabFirstName.value} ${grablastName.value} your birthdate is ${grabdateinput.value}. Thank you for Hitting the like button`
+  );
+
+  paragraphElement.textContent = `${grabFirstName.value} ${grablastName.value} your birthdate is ${grabdateinput.value}. Thank you for Hitting the like button`;
+
+  grabFirstName.value = "";
+  grablastName.value = "";
+  grabdateinput.value = "";
+});
+
+//
