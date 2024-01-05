@@ -44,3 +44,5 @@ let GGames = () => {
   guessingGame();
 };
 buttong.addEventListener("click", GGames);
+
+export { GGames };

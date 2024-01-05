@@ -3,6 +3,7 @@ import { decision } from "./RPCDC.js";
 import { pChoice } from "./RPC PL.js";
 import { cChoice } from "./RPC CC.js";
 import { Battle } from "./Battleship.js";
+import { GGames } from "./GuessingGame.js";
 //End of Imports
 // Buttons for Pages
 
@@ -110,6 +111,8 @@ console.log(grabdateinput);
 const grabSubmitBtn = document.getElementById("submitBtn");
 console.log(grabSubmitBtn);
 
+let infoarr = [" ", " "];
+
 grabSubmitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   console.log("HIT IT HARDER");
@@ -123,8 +126,10 @@ grabSubmitBtn.addEventListener("click", (e) => {
   console.log(
     `${grabFirstName.value} ${grablastName.value} your birthdate is ${grabdateinput.value}. Thank you for Hitting the like button`
   );
-
-  paragraphElement.textContent = `${grabFirstName.value} ${grablastName.value} your birthdate is ${grabdateinput.value}. Thank you for Hitting the like button`;
+  infoarr.push(
+    `${grabFirstName.value} ${grablastName.value} your birthdate is ${grabdateinput.value}. Thank you for Hitting the like button`
+  );
+  paragraphElement.textContent = infoarr;
 
   grabFirstName.value = "";
   grablastName.value = "";
