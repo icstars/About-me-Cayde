@@ -114,3 +114,17 @@ for (let i = 0; i < database.length; i++) {
   }
 }
 //make a signup form
+
+//object litera
+
+//constructor function
+const Person(firstName, lastName, birthDate)
+this.firstName=firstName
+this.lastName=lastName
+this.birthday=birthday
+
+const newPerson = new Person("Cayde, Levinduski")
+
+// pushing into an object
+
+const poepleArrayOfObjects = []

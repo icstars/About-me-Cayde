@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic</title>
+    <link rel="stylesheet" href="../Styles/style.css" />
+  </head>
+  <body style="background-color: black">
+    <div class="columns">
+      <div
+        style="
+          border: 3px solid #ffffff;
+          padding-left: 12%;
+          padding-right: 12%;
+          padding-bottom: 30%;
+        "
+        class="lfloat"
+      >
+        <h1 style="text-align: center">Task Input</h1>
+        <form style="text-align: center">
+          <label for="TaskL">Task</label>
+          <input type="text" name="" id="TaskL" />
+          <br />
+          <label for="dateInput">Due Date</label>
+          <input type="date" name="" id="dateInput" />
+          <br />
+          <input type="submit" id="submitBtn" value="Submit" />
+        </form>
+        <br />
+      </div>
+      <div class="Center"></div>
+      <div
+        style="
+          border: 3px solid #ffffff;
+          padding-left: 20%;
+          padding-right: 20%;
+          padding-bottom: 30%;
+        "
+        class="rfloat"
+      >
+        <h1 style="text-align: center">Task List</h1>
+        <ul id="List"></ul>
+      </div>
+    </div>
+  </body>
+  <script src="TasklistHS.js"></script>
+</html>

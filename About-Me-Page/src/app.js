@@ -111,7 +111,7 @@ console.log(grabdateinput);
 const grabSubmitBtn = document.getElementById("submitBtn");
 console.log(grabSubmitBtn);
 
-let infoarr = [" ", " "];
+let infoarr = [];
 
 grabSubmitBtn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -127,7 +127,7 @@ grabSubmitBtn.addEventListener("click", (e) => {
     `${grabFirstName.value} ${grablastName.value} your birthdate is ${grabdateinput.value}. Thank you for Hitting the like button`
   );
   infoarr.push(
-    `${grabFirstName.value} ${grablastName.value} your birthdate is ${grabdateinput.value}. Thank you for Hitting the like button`
+    `,  ${grabFirstName.value} ${grablastName.value} your birthdate is ${grabdateinput.value}.`
   );
   paragraphElement.textContent = infoarr;
 
@@ -136,4 +136,26 @@ grabSubmitBtn.addEventListener("click", (e) => {
   grabdateinput.value = "";
 });
 
-//
+//more hw
+
+// const grabForm = document.querySelector("form");
+
+// grabForm.addEventListener("submit", (e) => {
+//   e.preventDefault;
+//   console.log("message");
+//   const formData = new formData(grabForm);
+//   console.log(formData);
+
+//   const firstName = formData.get("firstName");
+//   console.log(firstName);
+
+//   const lastName = formData.get("lastName");
+//   console.log(lastName);
+
+//   const birthday = formData.get("birthday");
+//   console.log(birthday);
+
+//   formData.forEach((item) => {
+//     console.log(item);
+//   });
+// });
